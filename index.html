@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    <form>
+        <h1>Formulaire d'inscription Utilisateur</h1>
+
+        <!-- Prenom -->
+        <div class="row">
+            <label for="firsName">Prénom:</label><br>
+            <input type="text" id="firsName"><br><br>
+        </div>
+
+        <!-- Nom -->
+        <div class="row">
+            <label for="lastname">Nom:</label><br>
+            <input type="text" id="lastname"><br><br>
+        </div>
+
+        <!-- Email -->
+        <div class="row">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email"><br><br>
+        </div>
+
+        <!-- Mot de passe -->
+        <div class="row">
+            <label for="pw">Mot de passe:</label><br>
+            <input type="password" id="pw"><br><br>
+        </div>
+
+        <!-- Confirmation mot de passe -->
+        <div class="row">
+            <label for="cpw">Confirmer mot de passe:</label><br>
+            <input type="password" id="cpw"><br><br>
+        </div>
+
+        <!-- Genre -->
+        <div class="row">
+            <fieldset>
+                <legend>Genre:</legend>
+                <input type="radio" name="gender" id="btm" value="Masculin">
+                <label for="btm">Masculin</label>
+                <input type="radio" name="gender" id="btf" value="Feminin">
+                <label for="btf">Féminin</label>
+            </fieldset>
+        </div><br>
+
+        <!-- Pays -->
+        <div class="row">
+            <label for="list">Pays:</label><br>
+            <select id="list">
+                <option value="Tunis">Tunis</option>
+                <option value="France">France</option>
+                <option value="Maroc">Maroc</option>
+                <option value="Algeria">Algeria</option>
+            </select>
+        </div><br><br>
+
+        <!-- Button -->
+        <input type="button" value="S'inscrire" id="br">
+    </form>
+
+    <div id="success"></div>
+
+    <script src="controle.js"></script>
+</body>
+</html>
